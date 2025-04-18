@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "Sign Up";
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/SignUp.css" />
+
+<div class="container">
+    <div class="left">
+        <div class="logo">
+            <img src="~/Images/Logo white.png" alt="logo" />
+        </div>
+
+        <div class="name-fields">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="Loay" />
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="Kamal" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>ID</label>
+            <input type="text" placeholder="Doc2345" />
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Verconica@gmail.com" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="********" />
+        </div>
+
+        <a href="@Url.Action("Home", "Home")" class="btn-login">Sign up</a>
+
+        <div class="copyright">
+            © Copyright 2025 Pro Clinic corporation
+        </div>
+    </div>
+
+    <div class="right">
+        <h2>Interact with the clinic digitally and get<br />better benefits than with an app</h2>
+        <h3>Pro Clinic!</h3>
+        <img src="~/images/Pro Clinic.png" alt="clinic illustration" />
+    </div>
+</div>

@@ -1,0 +1,157 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Client Dashboard - Pro Clinic</title>
+    <link rel="stylesheet" href="~/css/Home.css" />
+    <link rel="stylesheet" href="~/css/Doctor.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="~/Images/Logoafteredit.png" alt="Pro Clinic Logo" />
+                <span>Pro Clinic</span>
+            </div>
+            <nav>
+                <a href="#clinics">Clinics</a>
+                <a href="#reservations">Reservations</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#diagnoses">Diagnoses</a>
+                <a href="#info">Information</a>
+
+            </nav>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for..." />
+        </div>
+    </header>
+
+    <!-- Clinics -->
+    <div id="clinics" class="section-title">Clinics</div>
+    <div class="card-container">
+        <div class="card">
+            <img class="clinic-image" src="https://www.myhealth.ph/wp-content/uploads/2020/07/IMG-504d2bc6d9fa1078a9121ee03fab95db-V-1024x768-1.jpg" alt="Clinic 1" />
+            <p><strong>Clinic 1</strong><br />شرح بسيط للمحتوى</p>
+        </div>
+        <div class="card">
+            <img class="clinic-image" src="https://gleneagles.hk/images/01_Clinic-B_resize.jpg" alt="Clinic 2" />
+            <p><strong>Clinic 2</strong><br />شرح بسيط للمحتوى</p>
+        </div>
+        <div class="card">
+            <img class="clinic-image" src="https://pbs.twimg.com/media/Dg5PE4OUwAETnF6.jpg:large" alt="Clinic 3" />
+            <p><strong>Clinic 3</strong><br />شرح بسيط للمحتوى</p>
+        </div>
+        <div class="card">
+            <img class="clinic-image" src="https://mediclinic.scene7.com/is/image/mediclinic/Wineland-Day-Clinic?_ck=1630927956056" alt="Clinic 4" />
+            <p><strong>Clinic 4</strong><br />شرح بسيط للمحتوى</p>
+        </div>
+    </div>
+    <a class="see-more" href="#">See More</a>
+
+    <!-- Reservations -->
+    <div id="reservations" class="section-title">Reservations</div>
+    <div class="card-container">
+        <div class="card">
+            <p><strong>Elrhman Clinic</strong></p>
+            <p>Doctor: Alaa<br />Price: 12$<br />At 5 pm</p>
+        </div>
+        <div class="card">
+            <p><strong>Elrhman Clinic</strong></p>
+            <p>Doctor: Alaa<br />Price: 12$<br />At 6 pm</p>
+        </div>
+    </div>
+    <a class="see-more" href="#">See More</a>
+
+    <!-- Doctors -->
+    <div id="doctors" class="section-title">Doctors</div>
+    <div class="doctor-container">
+        <div class="doctor">
+            <img class="doctor-image" src="https://www.future-doctor.de/wp-content/uploads/2024/08/shutterstock_2480850611.jpg" alt="Doctor Ahmed" />
+            <p><strong>د. أحمد</strong><br />أخصائي باطنة</p>
+            <a class="see-more" href="@Url.Action("Select", "Select", new { name = "Ahmed Samy", price = "200", day = "Sunday", date = "20 / 4 / 2025" })">
+                Select
+            </a>
+        </div>
+
+        <div class="doctor">
+            <img class="doctor-image" src="https://images.theconversation.com/files/304957/original/file-20191203-66986-im7o5.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=926&fit=clip" alt="Doctor Mohamed" />
+            <p><strong>د. محمد</strong><br />أخصائي قلب</p>
+            <a class="see-more" href="@Url.Action("Select", "Select", new { name = "Mohamed Ali", price = "250", day = "Monday", date = "21 / 4 / 2025" })">
+                Select
+            </a>
+        </div>
+
+        <div class="doctor">
+            <img class="doctor-image" src="https://hips.hearstapps.com/hmg-prod/images/portrait-of-a-happy-young-doctor-in-his-clinic-royalty-free-image-1661432441.jpg" alt="Doctor Ali" />
+            <p><strong>د. علي</strong><br />أخصائي أعصاب</p>
+            <a class="see-more" href="@Url.Action("Select", "Select", new { name = "Ali Tarek", price = "230", day = "Tuesday", date = "22 / 4 / 2025" })">
+                Select
+            </a>
+        </div>
+
+        <div class="doctor">
+            <img class="doctor-image" src="https://familydoctor.org/wp-content/uploads/2018/02/41808433_l.jpg" alt="Doctor Zeyad" />
+            <p><strong>د. زياد</strong><br />أخصائي عظام</p>
+            <a class="see-more" href="@Url.Action("Select", "Select", new { name = "Zeyad Hassan", price = "300", day = "Wednesday", date = "23 / 4 / 2025" })">
+                Select
+            </a>
+        </div>
+
+    </div>
+    <a class="see-more" href="#">See More</a>
+
+    <!-- Diagnoses -->
+    <div id="diagnoses" class="section-title">Diagnoses</div>
+    <div class="card-container">
+        <div class="card large">
+            <p><strong>Article Title</strong></p>
+            <p>شرح للمقال ونتائج التشخيص.</p>
+        </div>
+        <div class="card large">
+            <p><strong>Article Title</strong></p>
+            <p>شرح للمقال ونتائج التشخيص.</p>
+        </div>
+    </div>
+    <a class="see-more" href="#">See More</a>
+
+    <!-- Info -->
+    <section class="info">
+        <h2>Information</h2>
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="icon">📌</div>
+                <p><strong>About the project</strong><br />تحسين الدقة وتقليل الوقت باستخدام التكنولوجيا.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">⏱️</div>
+                <p><strong>Challenges</strong><br />الانتظار الطويل، جمع المعلومات اليدوي، أخطاء الكتابة.</p>
+            </div>
+            <div class="info-card">
+                <div class="icon">🚑</div>
+                <p><strong>Impact of the solution</strong><br />تقليل الأخطاء وتحسين الكفاءة للأطباء والمرضى.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Pro clinic © 2025. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
